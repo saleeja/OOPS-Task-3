@@ -64,11 +64,7 @@ full_time_employees = []
 part_time_employees = []
 
 while True:
-    employee_type = input("""Choose an option:
-                          1. Add full-time employee
-                          2. Add part-time employee
-                          3. Calculate total expense
-                          4. Quit: """)
+    employee_type = input("""Choose an option:\n1. Add full-time employee \n2. Add part-time employee \n3. Calculate total expense \n4. Quit \nEnter the option: """)
 
     if employee_type == '4':
         break  # Exit the loop if the user enters 'Q'
@@ -102,3 +98,33 @@ while True:
     else:
         print("Invalid input.")
 
+# output
+"""
+Choose an option:
+1. Add full-time employee  
+2. Add part-time employee  
+3. Calculate total expense 
+4. Quit
+Enter the option: 1
+Enter name: sale
+Enter hours worked: 6
+Choose an option:
+1. Add full-time employee
+2. Add part-time employee
+3. Calculate total expense
+4. Quit
+Enter the option: 2
+Enter name: dne
+Enter hours worked: 4
+Choose an option:
+1. Add full-time employee
+2. Add part-time employee
+3. Calculate total expense
+4. Quit
+Enter the option: 3
+
+Details of Entered Employees:
+sale's salary: $1200
+dne's salary: $600
+
+Total Salary Expense: $1800"""
